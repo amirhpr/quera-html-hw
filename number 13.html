@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>payment information</title>
+    <style>
+        body {
+            font-family: 'B Yekan', sans-serif;
+            margin: 20px;
+        }
+    </style>
+</head>
+    <body>
+        <form>
+            <fieldset>
+                <legend>اطلاعات ارسال و پرداخت</legend>
+                <label for="province">Choose a province:</label>
+                <input list="provinces" id="province" name="Choose-province" required>
+                <datalist id="provinces">
+                    <option value="Australia"></option>
+                    <option value="Austria"></option>
+                    <option value="America"></option>
+                    <option value="Nepal"></option>
+                </datalist>
+                <br>
+                <label for="address">address:</label>
+                <textarea id="address" name="address"  rows="4" cols="20"></textarea>
+                <br>
+                <label for="self_delivery">self_delivery:</label>
+                <input type="checkbox" id="self_delivery" name="self_delivery">
+
+                <h4>payment method:</h4>
+                <input type="radio" id="mellat" name="payment" value="mellat" checked>
+                <label for="mellat">بانک ملت</label><br>
+
+                <input type="radio" id="saderat" value="saderat">
+                <label for="saderat">saderat</label>
+                <br>
+
+                <input type="radio" id="parsian" value="parsian">
+                <label for="parsian">parsian</label>
+                <br>
+                <button type="submit" id="submit">ثبت سفارش</button>
+            </fieldset>
+        </form>
+    </body>
+</html>
